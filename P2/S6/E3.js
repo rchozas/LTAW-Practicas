@@ -1,4 +1,4 @@
-/-- Imprimir información sobre la solicitud recibida
+//-- Imprimir información sobre la solicitud recibida
 
 const http = require('http');
 const fs = require('fs');
