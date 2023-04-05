@@ -1,13 +1,13 @@
 body {
-    background-image: url("productos/fondo.JPG");
+    background-image: url("imagenes/fondo.JPG");
     background-repeat: repeat;
     text-align: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: antiquewhite;
+    
 }
-h3 {
-    color: aqua;
-    font-size: 20px;
+h2 {
+    text-align: center;
 
 }
