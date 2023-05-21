@@ -3,7 +3,7 @@ const http = require('http');
 const express = require('express');
 const colors = require('colors');
 
-const PUERTO = 8080;
+const PUERTO = 8081;
 
 //-- Crear una aplicación web vacia
 const app = express();
@@ -23,7 +23,7 @@ wsServer.on('request', (req) => {
 
     //-- Retrollamada de mensaje recibido
     connection.on('message', (message) => {
-        console.log("MENSAGE RECIBIDO");
+        console.log("MENSAJE RECIBIDO");
         console.log("  Tipo de mensaje: " + message.type);
         if (message.type === 'utf8') {
             console.log("  Mensaje: " + message.utf8Data.green);
