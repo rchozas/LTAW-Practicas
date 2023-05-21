@@ -4,7 +4,7 @@ const http = require('http');
 //-- Vamos a dar un poquito de color...
 const colors = require('colors');
 
-const PUERTO = 8080;
+const PUERTO = 8081;
 
 //-- Crear servidor. No tiene recursos implementados
 //-- (siempre devuelve error)
