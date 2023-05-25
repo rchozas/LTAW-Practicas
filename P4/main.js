@@ -83,14 +83,7 @@ electron.app.on('ready', () => {
         }
     });
 
-  //-- En la parte superior se nos ha creado el menu
-  //-- por defecto
-  //-- Si lo queremos quitar, hay que añadir esta línea
-  //win.setMenuBarVisibility(false)
-
-  //-- Cargar contenido web en la ventana
-  //-- La ventana es en realidad.... ¡un navegador!
-  //win.loadURL('https://www.urjc.es/etsit');
+  
 
   //-- Cargar interfaz gráfica en HTML
   win.loadFile("index.html");
@@ -109,8 +102,8 @@ electron.app.on('ready', () => {
 });
 
 
-//-- Esperar a recibir los mensajes de botón apretado (Test) del proceso de 
+//-- Esperar a recibir los mensajes de botón apretado (Hola) del proceso de 
 //-- renderizado. Al recibirlos se escribe una cadena en la consola
-electron.ipcMain.handle('test', (event, msg) => {
+electron.ipcMain.handle('Hola', (event, msg) => {
   console.log("-> Mensaje: " + msg);
 });
