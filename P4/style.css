@@ -1,0 +1,39 @@
+h1 {
+    width: 93;
+    padding: 20px;
+    background-color: rgb(179, 248, 250);
+    border-radius: 30px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(3, 107, 107);
+  }
+
+.blue {
+    color: blue;
+}
+
+.red {
+  color: red;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(100, 192, 164);
+    width: 60%;
+    padding: 20px;
+}
+  #display {
+      border: 2px solid lightblue;
+      padding: 10px;
+  }
+
+  #left{
+    width: 40%;
+    border: 8px solid rgb(179, 248, 250);
+    float:left;
+    
+  }
+  #right{
+    width: 40%;
+    border: 8px solid rgb(179, 248, 250);
+    float: right;
+  }
