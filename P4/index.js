@@ -8,6 +8,9 @@ const display = document.getElementById("display");
 const info1 = document.getElementById("info1");
 const info2 = document.getElementById("info2");
 const info3 = document.getElementById("info3");
+const info4 = document.getElementById("info4");
+const info5 = document.getElementById("info5");
+const info6 = document.getElementById("info6");
 const print = document.getElementById("print");
 
 //-- Acceder a la API de node para obtener la info
@@ -16,6 +19,9 @@ const print = document.getElementById("print");
 info1.textContent = process.versions.node;
 info2.textContent = process.versions.chrome;
 info3.textContent = process.versions.electron;
+info4.textContent = process.arch;
+info5.textContent = process.platform;
+info6.textContent = process.cwd();
 
 
 btn_test.onclick = () => {
