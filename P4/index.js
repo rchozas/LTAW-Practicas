@@ -11,6 +11,7 @@ const info3 = document.getElementById("info3");
 const info4 = document.getElementById("info4");
 const info5 = document.getElementById("info5");
 const info6 = document.getElementById("info6");
+const info7 = document.getElementById("info7");
 const print = document.getElementById("print");
 
 //-- Acceder a la API de node para obtener la info
@@ -22,14 +23,15 @@ info3.textContent = process.versions.electron;
 info4.textContent = process.arch;
 info5.textContent = process.platform;
 info6.textContent = process.cwd();
+info7.textContent = ip.address();
 
 
 btn_test.onclick = () => {
-    display.innerHTML += "HOLA! ";
+    display.innerHTML += "TEST! ";
     console.log("Botón apretado!");
 
     //-- Enviar mensaje al proceso principal
-    electron.ipcRenderer.invoke('Hola', "MENSAJE DE PRUEBA: Boton apretado");
+    electron.ipcRenderer.invoke('test', "MENSAJE DE PRUEBA: Botón apretado");
 }
 
 //-- Mensaje recibido del proceso MAIN

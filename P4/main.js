@@ -4,6 +4,7 @@ const http = require('http');
 const express = require('express');
 const colors = require('colors');
 
+
 //-- Cargar el módulo de electron
 const electron = require('electron');
 const PUERTO = 9000;
@@ -102,8 +103,8 @@ electron.app.on('ready', () => {
 });
 
 
-//-- Esperar a recibir los mensajes de botón apretado (Hola) del proceso de 
+//-- Esperar a recibir los mensajes de botón apretado (Test) del proceso de 
 //-- renderizado. Al recibirlos se escribe una cadena en la consola
-electron.ipcMain.handle('Hola', (event, msg) => {
+electron.ipcMain.handle('test', (event, msg) => {
   console.log("-> Mensaje: " + msg);
 });
