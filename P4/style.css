@@ -9,7 +9,7 @@ h1 {
   }
 
 .blue {
-    color: blue;
+    color: rgb(26, 184, 184);
 }
 
 .red {
@@ -27,13 +27,15 @@ h2{
   }
 
   #left{
-    width: 40%;
-    border: 8px solid rgb(179, 248, 250);
+    width: 60%;
+    border: 6px solid rgb(179, 248, 250);
     float:left;
+    background-color: azure;
     
   }
   #right{
-    width: 40%;
-    border: 8px solid rgb(179, 248, 250);
+    width: 30%;
+    border: 6px solid rgb(179, 248, 250);
     float: right;
+    background-color: azure;
   }
