@@ -1,7 +1,10 @@
+body{
+  background: radial-gradient(rgb(113, 252, 159), rgb(247, 198, 247),white);
+}
 h1 {
     width: 93;
     padding: 20px;
-    background-color: rgb(179, 248, 250);
+    background:radial-gradient(rgb(179, 248, 250),white) ;
     border-radius: 30px;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
