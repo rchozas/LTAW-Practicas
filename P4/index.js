@@ -13,6 +13,7 @@ const info5 = document.getElementById("info5");
 const info6 = document.getElementById("info6");
 const info7 = document.getElementById("info7");
 const print = document.getElementById("print");
+const num_user = document.getElementById("usuarios");
 
 //-- Acceder a la API de node para obtener la info
 //-- Sólo es posible si nos han dado permisos desde
@@ -25,17 +26,23 @@ info5.textContent = process.platform;
 info6.textContent = process.cwd();
 info7.textContent = ip.address();
 
+electron.ipcRenderer.on('usuarios', (event, message) => {
+    console.log("Recibido: " + message);
+    num_user.textContent = message;
+})
+
+
+
+//-- Mensaje recibido 
+electron.ipcRenderer.on('print', (event, message) => {
+    console.log("Recibido: " + message);
+    display.innerHTML += message;
+    
+});
 
 btn_test.onclick = () => {
-    display.innerHTML += "TEST! ";
     console.log("Botón apretado!");
 
     //-- Enviar mensaje al proceso principal
     electron.ipcRenderer.invoke('test', "MENSAJE DE PRUEBA: Botón apretado");
 }
-
-//-- Mensaje recibido del proceso MAIN
-electron.ipcRenderer.on('print', (event, message) => {
-    console.log("Recibido: " + message);
-    print.textContent = message;
-  });

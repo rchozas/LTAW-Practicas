@@ -10,6 +10,8 @@ const colors = require('colors');
 //-- Cargar el módulo de electron
 const electron = require('electron');
 const PUERTO = 9000;
+//-- declarar usuarios
+let contar_usuario = 0;
 
 //-- Crear una nueva aplciacion web
 const app = express();
@@ -39,10 +41,12 @@ app.use(express.static('public'));
 io.on('connect', (socket) => {
   
   console.log('** NUEVA CONEXIÓN **'.yellow);
+  contar_usuario = contar_usuario + 1;
 
   //-- Evento de desconexión
   socket.on('disconnect', function(){
     console.log('** CONEXIÓN TERMINADA **'.yellow);
+    contar_usuario -=1;
   });  
 
   //-- Mensaje recibido: Reenviarlo a todos los clientes conectados
