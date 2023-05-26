@@ -3,6 +3,8 @@ const socketServer = require('socket.io').Server;
 const http = require('http');
 const express = require('express');
 const colors = require('colors');
+//-- const process = requiere('process');
+//-- const ip = requiere('ip');
 
 
 //-- Cargar el módulo de electron
