@@ -16,21 +16,21 @@
     {
         "productos":[
             {
-                "nombre": "",
-                "descripcion": "",
-                "precio": "",
-                "stock": ""
+                "nombre": "Apple watch SE LTE",
+                "descripcion": "smartwatch segunda generacion apple",
+                "precio": "348.99€",
+                "stock": "50"
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "precio": "",
-                "stock": ""
+                "nombre": "Apple watch Ultra LTE",
+                "descripcion": "Smartwatch Apple",
+                "precio": "990€",
+                "stock": "18"
             },
             {
-                "nombre": "",
-                "descripcion": "",
-                "precio": "",
+                "nombre": "Samsung Galaxy watch 4",
+                "descripcion": "Smartwatch Samsung 4G",
+                "precio": "365.20€",
                 "stock": ""
             }
         ]
