@@ -31,7 +31,7 @@
                 "nombre": "Samsung Galaxy watch 4",
                 "descripcion": "Smartwatch Samsung 4G",
                 "precio": "365.20€",
-                "stock": ""
+                "stock": "100"
             }
         ]
     },
@@ -39,15 +39,15 @@
         "pedidos":[
             {
                 "usuario": "root",
-                "direccion": "",
-                "num_tarjeta": "",
-                "productos": ""
+                "direccion": "Plaza España, 34",
+                "num_tarjeta": "123456789",
+                "productos": "Apple watch SE LTE"
             }, 
             {
-                "usuario": "",
-                "direccion": "",
-                "num_tarjeta": "",
-                "productos": ""   
+                "usuario": "Rc",
+                "direccion": "Avenida de Extremadura, 24",
+                "num_tarjeta": "987654321",
+                "productos": "Samsung Galaxy watch 4"   
             }
         ]    
     }
