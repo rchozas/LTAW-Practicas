@@ -3,13 +3,13 @@
         "usuarios":[
             {
                 "usuario": "root",
-                "nombre": "",
-                "email": ""
+                "nombre": "root root root",
+                "email": "root@gmail.com"
             },
             {
-                "usuario": "",
-                "nombre": "",
-                "email": ""
+                "usuario": "Rc",
+                "nombre": "Raquel Chozas G",
+                "email": "rc@gmail.com"
             }
         ]
     },
