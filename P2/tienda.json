@@ -1,0 +1,54 @@
+[
+    {
+        "usuarios":[
+            {
+                "usuario": "root",
+                "nombre": "",
+                "email": ""
+            },
+            {
+                "usuario": "",
+                "nombre": "",
+                "email": ""
+            }
+        ]
+    },
+    {
+        "productos":[
+            {
+                "nombre": "",
+                "descripcion": "",
+                "precio": "",
+                "stock": ""
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "precio": "",
+                "stock": ""
+            },
+            {
+                "nombre": "",
+                "descripcion": "",
+                "precio": "",
+                "stock": ""
+            }
+        ]
+    },
+    {
+        "pedidos":[
+            {
+                "usuario": "root",
+                "direccion": "",
+                "num_tarjeta": "",
+                "productos": ""
+            }, 
+            {
+                "usuario": "",
+                "direccion": "",
+                "num_tarjeta": "",
+                "productos": ""   
+            }
+        ]    
+    }
+]    
